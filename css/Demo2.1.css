@@ -25,6 +25,9 @@ nav.navbar{margin-bottom:0;}
 	max-width:920px;
 }
 
+/*我的*/
+p.my{color:#777;font-size:10%;}
+
 /*技能*/
 .progress{margin:5%;font-weight:800;}
 
