@@ -4,147 +4,112 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
-	 <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="" >
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/Demo2.css" >
 <style>
-html,body{overflow-x:hidden;/*禁止显示X轴滚动条*/}
-h2,h3,p{
-	text-align:center;
-}
-p{margin-bottom:0;padding:2% 0;}
 
-/**/
-.row{border-bottom:1px solid #ccc;padding:1% 0;}
-/*导航*/
-nav.navbar{margin-bottom:0;}
-/*z主体*/
+/*内容*/
 .centainer{
 	
 }
-.row{background:#eee;box-shadow: 0px 10px 3px 10px rgba(0, 0, 0, .3)}
-/*作品*/
-span{overflow:visible;width:70%;height:200%;overflow:hidden;}	
-/*联系*/
-form div input.form-control, form .btn-block{width:90%;min-height:50px;}
 </style>
 </head>
 
-<body style="background:#aaa;">
+<body>
 
 
-<!-- 导航 --><!--role="navigation"有助于增加可访问性-->
-<nav class="navbar navbar-default " role="" >
-	
-	<div class="navbar-header">
-		<!--logo-->
-		<a class="navbar-brand" href="#">Logo</a>
-		<!--按钮--><!-- data-target 目标点 -->
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
-			<span class="sr-only">切换导航</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-
-	</div>
-	
-	<!-- 手机 折叠导航 --><!-- data-target的目标点 -->
-	<div class="collapse navbar-collapse  pull-right" id="example-navbar-collapse">
-
-		<ul class="nav navbar-nav text-center">
-			<li><a href="#">ABOUT<p>关于</p></a></li>
-			<li><a href="#">portfolio<p>作品</p></a></li>
-			<li><a href="#">contact<p>联系</p></a></li>
-		</ul>
-
-	</div>	
-
-</nav>
-<div class="centainer center-block" style="max-width:920px;">
-	<!--*************** 网格系统 ***************-->
-	<div class="row" style="background:#ccc">
+<!-- 星空 -->
+<div class="stars">
+	<h1 class="text-center">Resume</h1>
+</div>
+<!--内容-->
+<div class="centainer center-block" style="">
+	<div style="height:100px"></div>
+	<!--********************** 网格系统 **********************-->
+	<div class="row">
 		<!--简介-->
 		<h3>简介</h3>
 		<div class="col-sm-4" style="float:right;min-height:300px;">		
-			<img class="img-circle img-responsive center-block" style="width:40%" src="https://gss0.baidu.com/7Ls0a8Sm2Q5IlBGlnYG/sys/portraitl/item/d816415c?t=1448986288" />
+			<img class="img-circle img-responsive center-block" style="width:50%" src="img/my.png" />
 			<h2>陈政</h2>
+			<p>前端开发攻城狮</p>
 		</div>
 		<div class="col-sm-8" style="min-height:300px">
-			<p>前端开发攻城狮</p>
-			<p class="text-center">Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.</p>
+			<h3>Skill</h3>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:70%;background:#FC0;">javascript
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:50%;">HTML5
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:40%;">CSS3
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:30%;background:#306;">Bootstrap
+				</div>
+			</div>
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">PHP
+				</div>
+			</div>
 		</div>
 	</div>	
-	<!--*************** 作品 ***************-->
-	<div class="row" id="porject">
+	<!--********************** 作品 **********************-->
+	<div class="row img-rounded" id="porject">
 		<h3>作品</h3>
 		<div class="col-sm-6">
 			<span class="center-block" >
-			<img class=" img-responsive center-block img-rounded .img-thumbnail img-thumbnail"  src="img/lol.png" />
+			<img class="img-responsive center-block img-rounded  img-thumbnail"  src="img/lol.png" />
 			</span>
 			<p >仿英雄联盟官网</p>
 		</div>
 
-		<div class="col-sm-6">
+		<div class="col-sm-6 ">
 			<span class="center-block" >
-			<img class=" img-responsive center-block img-rounded .img-thumbnail img-thumbnail"  src="img/tao.png" />
+			<img class="img-responsive center-block img-rounded  img-thumbnail"  src="img/tao.png" style="margin-top:20%;" />
 			</span>
 			<p >仿淘宝静态官网</p>
 		</div>
 
 		<div class="col-sm-6">
 			<span class="center-block" >
-			<img class=" img-responsive center-block img-rounded .img-thumbnail img-thumbnail"  src="img/tcs.png" />
+			<img class="img-responsive center-block img-rounded img-thumbnail"  src="img/tcs.png" />
 			</span>
 			<p >原生js贪吃蛇</p>
 		</div>
 
 		<div class="col-sm-6">
 			<span class="center-block" >
-			<img class=" img-responsive center-block img-rounded .img-thumbnail img-thumbnail"  src="img/e.png" />
+			<img class="img-responsive center-block img-rounded img-thumbnail"  src="img/e.png" />
 			</span>
 			<p >原生js俄罗斯方块</p>
 		</div>
 	</div>
-	<!--***************联系***************-->
+	<!--**********************联系**********************-->
 	<div class="row">
 		<h3>联系</h3>
-		<!--表单-->
-		<!--div class="col-sm-6">
-			<form>
-				<div class="form-group ">
-					<input class="center-block form-control" type="text" placeholder="您的名字" />
-				</div>
-				<div class="form-group">
-					<input class="center-block form-control" type="text" placeholder="您的邮箱" />
-				</div>
-				<div class="form-group">
-					<input class="center-block form-control" type="text" placeholder="电话号码" />
-				</div>
-				<div class="form-group">
-					<input class="center-block form-control" type="text" placeholder="您的留言" />
-				</div>
-				<button class="center-block btn btn-lg btn-info btn-block" type="button">提交</button>
-			</form>
-		</div>
-		<div class="col-sm-6">
-			<p class="text-primary" style="font-size:20px;">Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.</p>
-		</div-->
 		
-		<div  class="col-sm-12">
+		<div class="col-sm-12">
 			<p>Q Q : 905618355</p>
 			<p>Wechat:chen905618355</p>
 			<p>e-mail:905618355@qq.com</p>
 		</div>
 	</div>
-	<!--*************** 网络联系 ***************-->
-	</div class="row">
-		
-	</div>
+	<!--********************** 网络联系 **********************-->
+	
+
+
+
+
 </div>
 
-<!--所有权利保留-->
-<div >
-	<p class="bg-success" style="">chen ©2017。所有权保留</p>
+	<!--所有权利保留-->
+<div>
+	<p style="background:#eee;">@chen ©2017。所有权保留</p>
 </div>
 
 
@@ -183,9 +148,6 @@ function cName(obj,arr){
 	return obj.getElementsByClassName(arr);
 }
 </script>
-<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>
