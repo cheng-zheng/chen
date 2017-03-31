@@ -1,16 +1,20 @@
-
+h2{font-weight:900;}
+h3{font-weight:800;}
 h2,h3,p{
 	text-align:center;
 }
-p{margin-bottom:0;padding:2% 0;}
+p{margin-bottom:0;padding:2% 0;color:#444;}
+
 /*开始背景图片*/
 .stars{
 	position:absolute;z-index:0;top:0px;
 	width:100%;height:90px;
 	background:url(../img/stars.jpg) ;background-attachment:fixed;
 }
-/**/
-.row{border:1px solid #ccc;border-top:none;padding:1% 0;}
+/*格栅*/
+.row{
+	border:1px solid #ccc;border-top:none;padding:1% 0;
+}
 
 /*导航*/
 nav.navbar{margin-bottom:0;}
@@ -22,8 +26,7 @@ nav.navbar{margin-bottom:0;}
 }
 
 /*技能*/
-.progress{margin:5%;}
-.row{/*background:#eee;box-shadow: 0px 10px 3px 10px rgba(0, 0, 0, .3);*/}
+.progress{margin:5%;font-weight:800;}
 
 /*作品*/
 .col-sm-6{margin:5% 0;}
