@@ -110,9 +110,9 @@
 			<p><img src="img/wei-.png"/> Wechat: chen905618355</p>
 			<p><img src="img/e-mail.png"/> e-mail : 905618355@qq.com</p>
 			<p>
-				<img src="img/git.png"/><a href="https://github.com/cheng-zheng"> Github </a>
-				<img src="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"/><a href="http://codepen.io/cheng-zheng"> CodePen </a>
-				<img class="img-circle" src="http://www.freecodecamp.cn/favicons/android-chrome-144x144.png"/><a href="http://www.freecodecamp.cn/cheng-zheng"> FreeCodeCamp</a>
+				<img src="img/git.png"/><a onclick="return onConfirm();" href="https://github.com/cheng-zheng"> Github </a>
+				<img src="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico"/><a onclick="return onConfirm();" href="http://codepen.io/cheng-zheng"> CodePen </a>
+				<img class="img-circle" src="http://www.freecodecamp.cn/favicons/android-chrome-144x144.png"/><a onclick="return onConfirm();" href="http://www.freecodecamp.cn/cheng-zheng"> FreeCodeCamp</a>
 			</p>
 		</div>
 	</div>
@@ -139,7 +139,13 @@ function Resize(){
 		aSpan[i].style.height = width+'px';//给高赋值
 	}
 }Resize();
-
+//是否要跳转页面
+function onConfirm(){
+	if(confirm("您确定要跳转吗？")){
+		return true;
+	}
+	return false;
+}
 
 function Id(obj){
 	return document.getElementById(obj);
