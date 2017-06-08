@@ -1,0 +1,577 @@
+/*-----样式初始化-----*/
+body,ul,li,a,h1,h2,h3,h4,h5,h6,p,i,dd,tt,span,video{
+	margin:0;padding:0;
+	list-style:none;/*去掉li的点*/
+	font-family:"Microsoft YaHei", Tahoma, simsun;
+	text-decoration:none; /*去掉字体下划线*/
+	color:#000;
+}
+a{font-size:14px;}
+img{border:0px;}/*IE中去掉图片框*/
+/*--------------------公共样式--------------------*/
+.header, .section, .footer{
+	width:1240px;margin:0 auto;
+}
+/*--------------------公共样式_End--------------------*/
+/*背景的容器*/
+#video{
+	min-width:1240px;width:100%;height:695px;position:absolute;top:0px;z-index:-5;
+	overflow:hidden;
+}
+/******************************************************/
+/*
+--------------------头部开始_Go----------------------
+--------------------Hearer_Go--------------------
+*/
+.header{
+	height:695px;
+}
+/***--顶部_导航_Go--***/
+.nav_top, .logo, .nav_ul li, .nav_ul li a, .nav_ul span{
+	position:relative; float:left;
+}
+.nav_top{height:80px;width:100%;background:#111;}
+.nav_ul{
+	height:80px; width:1240px;
+	border-radius:40px;/*圆角*/
+	margin:0 auto;
+}
+.logo{/*logo*/
+	width:230px; height:114px; z-index:1;
+	background:url(../image/lol.png) no-repeat -12px -170px;/*LoGo图片*/
+}
+.nav_ul li{
+	width:144px;height:80px;
+}
+.nav_ul li a{
+	width:80px;color:#eee; 
+	padding-top:25px;font-size:16px;
+	text-align:center;/*文本居中*/
+}
+.nav_ul span{
+	color:rgb(102,102,102);
+	left:10px;top:2px;font-size:10px;
+}
+/***--顶部_导航_End--***/
+
+/*--隐藏_导航_Go--*/
+.nav_hidden{
+	position:absolute;left:0;top:80px;width:100%; 
+	background:rgba(0, 0, 0, 0.701961);/*半透明*/
+	visibility:hidden;/*隐藏*/z-index:1;
+}
+.nav_hidden:hover{visibility:visible;}/*鼠标移入显示*/
+.nav_top:hover+.nav_hidden{visibility:visible;}/*鼠标移入显示*/
+.nav_hidden_ul, .nav_hidden_ul div, .nav_hidden_ul li, .nav_hidden_ul li a{
+	position:relative;
+}
+.nav_hidden_ul{
+	width:1240px; margin:0 auto;/*ul居中*/
+}
+.nav_hidden_ul div{
+	width:345px;height:200px;float:left;
+}
+.nav_hidden_ul li{
+	width:144px;height:250px;float:left;
+}
+.nav_hidden_ul li a{
+	width:144px;float:left;
+	color:#fff;line-height:40px;
+	text-align:center;/*文本居中*/
+	font-size:14px;
+}
+.nav_hidden_ul li a:hover{color:rgb(0,171,136);}/*隐藏导航_鼠标移入颜色变绿*/
+/*--隐藏_导航_End--*/
+
+/*头部_当前_活动_Go*/
+.header_activity{
+	position:absolute;/*相对父定位*/
+	top:150px;
+}
+.header_activity h1{
+	position:relative;/*相对子定位*/
+	color:rgb(0,171,136); font-size:50px;
+	text-shadow:3px 3px 3px rgba(0,0,0,0.5);/*阴影*/
+}
+.header_activity p{
+	width:440px;color:#ccc;font-size:16px;
+	position:relative;/*相对子定位*/
+}
+.header_activity video{
+	width:220px; height:120px; top:20px;
+	border:1px solid rgb(0,171,136);/*视频边宽*/
+	position:relative;/*相对子定位*/
+}
+.video_play{/*视频 播放*/
+	width:50px; height:50px;top:-75px;left:82px;
+	background:url(../image/lol.png) no-repeat 5px -400px;
+	position:relative;/*相对子定位*/
+	z-index:1;
+}
+.look_act{/*查看详情*/
+	display: block;/*块级元素*/
+	width:155px; height:36px;top:10px;z-index:1;
+	font-size:14px;/*字体大小*/
+	line-height:36px;/*行高*/
+	text-align:center;/*居中对齐*/
+	color:rgb(27,246,204);/*字体颜色*/
+	border:2px solid rgb(5,173,141);/*边框*/
+	background:rgba(0, 0, 0, 0.5);/*半透明*/
+}
+.look_act:hover{background:rgba(0, 0, 0, 0.7);/*鼠标移入_半透明*/}
+.version{/*游戏版本*/
+	width:340px;color:#333; left:900px;top:50px;
+	position:relative;/*相对子定位*/
+}
+.version h4, .version p, .version a{
+	float:left;width:110px;height:30px;
+	position:relative;/*相对子定位*/
+	text-align:center;/*居中对齐*/
+	line-height:30px;/*行高*/
+}
+.version a{/*查看详情*/
+	display: block;/*块级元素*/
+	width:100px; height:30px;z-index:1;
+	font-size:12px;/*字体大小*/
+	line-height:30px;/*行高*/
+	text-align:center;/*居中对齐*/
+	color:rgb(27,246,204);/*字体颜色*/
+	border:2px solid rgb(5,173,141);/*边框*/
+	background:rgba(0, 0, 0, 0.5);/*半透明*/
+}
+.version a:hover{background:rgba(0, 0, 0, 0.7);/*鼠标移入_半透明*/}
+/*头部_当前_活动_Nnd*/
+
+/*底部_主导航_Go*/
+.header_bottom{
+	width:1240px; height:115px; z-index:1; top:580px;
+	background:url(../image/lol.png) no-repeat 0px -472px;/*图片*/
+	position:absolute;/*相对子定位*/
+}
+.header_bottom a{
+	display: block;/*块级元素*/
+	width:112px; height:115px;
+	position:relative;/*相对子定位*/
+	float:left;/*左浮动*/
+	text-align:center;/*居中对齐*/
+	background:rgba(0, 0, 0, 0.2);/*半透明*/
+}
+.header_bottom .download{
+	width:220px;
+}
+.header_bottom a:hover{/*鼠标_移入*/
+	background:none;/*半透明*/
+}
+.header_bottom a div{/*下载游戏*/
+	width:40px;height:30px; margin:20px auto 0;
+}
+.header_bottom a .d1{/*新手礼包*/
+	background:url(../image/lol.png) no-repeat 0px -7px;/*图片*/}
+.header_bottom a .d2{/*视频中心*/	
+	background:url(../image/lol.png) no-repeat -40px -7px;/*图片*/}
+.header_bottom a .d3{/*赛事中心*/
+	background:url(../image/lol.png) no-repeat -80px -7px;/*图片*/}
+.header_bottom a .d4{/*游戏资料*/
+	background:url(../image/lol.png) no-repeat -120px -7px;/*图片*/}
+.header_bottom a .d5{/*新版客户端*/
+	background:url(../image/lol.png) no-repeat -160px -7px;/*图片*/}
+.header_bottom h3{color:#eee;}
+.header_bottom h6{color:#aaa;}
+.header_my{/*个人*/
+	width:450px; height:115px;
+	position:relative;/*相对子定位*/
+	float:left;/*左浮动*/
+}
+.header_my div{
+	width:80px; height:80px; margin:15px; float:left;
+	background:url(../image/ttt.png) no-repeat;/*图*/
+}
+.header_my h3{float:left; margin:15px;}
+.header_my h5{float:left;width:332px;}
+/*
+--------------------头部结束_End--------------------
+--------------------Header_End--------------------*/
+/*************************************************************/
+/*
+--------------------内容开始_Go--------------------
+--------------------
+*/
+/*****内容*****/
+.section{
+	height:1767px;
+	position:relative;/*相对子定位*/
+	background:#fff;
+}
+/*主要内容_左浮动*/
+.article{
+	width:780px; 
+	float:left; overflow:hidden;
+	position:relative;/*相对子定位*/
+}
+
+/*轮播*/
+.rotate{
+	width:780px; height:370px; top:30px;
+	background:#eee;
+	position:relative;/*相对子定位*/
+	overflow:hidden;/*隐藏逆出容器的内容_不会出现滚动条*/
+}
+#js_rotate1{/*轮播容器*/
+	width:3900px; height:330px;
+	position:absolute;/*相对父定位*/
+}
+#js_rotate1 li{/*轮播图片*/
+	width:780px; height:330px; float:left;
+	position:relative;/*相对子定位*/
+}
+.rotate a{
+	width:156px;height:40px;float:left;top:330px;
+	position:relative;/*相对子定位*/
+	text-align:center;/*居中对齐*/
+	line-height:40px;/*行高*/
+}
+.rotate .rot{background:rgb(5,173,141);color:#fff;}
+/*内容_左浮动_||_右浮动_通用样式*/
+/*视频_中心 && 赛事_中心 && 客服_专区 ||
+  公告 && 英雄/皮肤 && 活动中心 */
+.video_cent, .match_cent, .custom, 
+.board, .hero, .activity{
+	width:100%; /*height:510px;*/ float:left;margin:80px 0 0 0;
+	position:relative;/*相对子定位*/
+}
+.video_cent i{/*视频中心的图片*/
+	width:40px; height:40px; 
+	display:block;/*块元素*/ float:left;
+	background:url(../image/lol.png) no-repeat -40px -44px;/*图片*/
+}
+.match_cent i{/*赛事中心的图片*/
+	width:40px; height:40px; 
+	display:block;/*块元素*/ float:left;
+	background:url(../image/lol.png) no-repeat -80px -44px;/*图片*/
+}
+.custom i{/*客服专区的图片*/
+	width:40px; height:40px; 
+	display:block;/*块元素*/ float:left;
+	background:url(../image/lol.png) no-repeat -520px -40px;/*图片*/
+}
+.video_cent u{/*我要投稿_图片*/
+	width:20px; height:18px; 
+	display:block;/*块元素*/ float:left;
+	background:url(../image/lol.png) no-repeat -570px -48px;/*图片*/
+}
+.video_cent_top h2, .match_cent_top h2, .custom_top h2,
+.hero_top h2, .hero_bottom h2, .activity h2{
+	float:left;/*左浮动*/
+}
+.video_cent_top .a1, .match_cent_top .a1, .custom_top .a1,
+.hero_top .a1, .activity .a1{
+	float:right;/*右浮动*/
+	background:#eee;
+	padding:4px 10px;margin:0 5px;/*内_外_边距*/
+	border-radius:20px;/*圆角边框*/
+	border:2px solid #eee;/*边框*/
+}
+.video_cent_top .a1:hover,.match_cent_top .a1:hover, .custom_top .a1:hover,
+.hero_top .a1:hover, .activity .a1:hover{/*移入属性变化*/
+	border:2px solid rgb(5,173,141);/*边框*/
+	color:rgb(5,173,141);
+	background:#fff;
+}
+
+/*视频_中心_下部 && 赛事_中心_下部 && 客服专区_下部 */
+.video_cent_down, .match_cent_down, .custom_down, .board_top,
+.hero_middle, .activity, .activity_bottom{
+	width:100%; float:left;top:0px;
+	position:relative;/*相对子定位*/
+}
+/*视频_中心_中间 && 赛事_中心_中间 && 客服专区_中间*/
+.video_cent_middle,.match_cent_middle, .custom_middle{
+	width:100%; height:40px;float:left;
+}
+.video_cent_middle li, .match_cent_middle li, .custom_middle li,
+/*公告_顶部 && 英语/皮肤*/
+.board_top li, .hero_middle li, .custom_board{/*custom_board :*/
+	width:130px; height:36px;float:left;
+	text-align:center;/*居中对齐*/
+	line-height:36px;/*行高*/
+	border-bottom:4px solid #ddd;/*边框_底部*/
+}
+
+/*视频_中心_底部*/
+.video_cent_middle .vid{
+	border-bottom:4px solid rgb(5,173,141);/*鼠标移入_边框_底部*/
+	color:rgb(5,173,141);/*鼠标移入_字体颜色*/
+}
+.video_cent_bottom{
+	width:800px; height:350px;position:relative;float:left;
+	overflow:hidden;/*隐藏溢出内容*/
+}
+.video_cent_bottom ul{position:absolute;display:none;/*隐藏*/}
+.video_cent_bottom li{/*195*/
+	width:180px; height:147px; float:left;
+	background:#ccc; 
+	margin:15px 19px 10px 0px;/*外边距_上_右_下_左*/
+}
+.video_cent_bottom li span{
+	width:180px; height:100px;
+	background:#666;
+	display:block;/*块元素*/
+}
+.video_cent_bottom_1 li span{background:url(../image/video_1.png) no-repeat;}
+.video_cent_bottom_2 li span{background:url(../image/video_2.png) no-repeat;}
+.video_cent_bottom_3 li span{background:url(../image/video_3.png) no-repeat;}
+.video_cent_bottom_4 li span{background:url(../image/video_4.png) no-repeat;}
+.video_cent_bottom_5 li span{background:url(../image/video_5.png) no-repeat;}
+.video_cent_bottom_6 li span{background:url(../image/video_6.png) no-repeat;}
+.video_cent_display{/*再显示8个视频*/
+	width:780px; height:40px;float:left;
+	background:#eee; top:20px;
+	position:relative;/*相对子定位*/
+	text-align:center;/*居中对齐*/
+	line-height:40px;/*行高*/
+}.video_cent_display:hover{background:#ccc;}
+
+
+/**赛事_中心_底部**/
+.match_cent_middle .mat{
+	border-bottom:4px solid rgb(5,173,141);/*鼠标移入_边框_底部*/
+	color:rgb(5,173,141);/*鼠标移入_字体颜色*/
+}
+.match_cent_bottom{width:780px;float:left;margin:10px 0 0;}
+.match_cent_bottom div{display:none;/*隐藏*/}
+.match_cent_bottom b{/*左边图片区*/
+	width:180px; height:280px; float:left;
+	margin:0 10px 0 0;
+}
+.match_cent_bottom b a{
+	width:180px; height:40px;
+	margin:10px 0;
+	display:block;/*块元素*/
+	text-align:center;/*居中对齐*/
+	line-height:40px;/*行高*/
+	background:url(../image/lol.png) no-repeat 0px -348px;/*图片*/
+}
+/**赛事_中心_主题**/
+.match_cent_bottom span{
+	width:590px; height:100px;float:left;
+	display:block;/*块元素*/
+	border-bottom:2px solid #ccc;
+}
+.match_cent_bottom span h2{
+	width:480px;line-height:45px;float:left;
+	color:rgb(5,173,141);
+}
+.match_cent_bottom span h2 p{
+	width:400px;float:left;
+}
+.match_cent_bottom span h1{
+	width:100px;height:100px;
+	float:right;display:block;/*块元素*/
+	color:rgb(5,173,141);/*绿色字体*/
+}
+.match_cent_bottom span h1 font{float:right;color:#222;margin:0px 30px;}
+/**赛事_中心_列表**/
+.match_cent_bottom ul{width:590px; float:left;font-size:14px;}
+.match_cent_bottom ul li{line-height:30px;}
+.match_cent_bottom ul tt{float:right;}
+
+/**客服专区_**/
+.custom_middle .cus{
+	border-bottom:4px solid rgb(5,173,141);/*鼠标移入_边框_底部*/
+	color:rgb(5,173,141);/*鼠标移入_字体颜色*/
+}
+.custom_middle a{/*公告的···*/
+	width:130px; height:36px;float:left;
+	text-align:center;/*居中对齐*/
+	line-height:36px;/*行高*/
+	border-bottom:4px solid #ddd;/*边框_底部*/
+}
+.custom_bottom div{width:780px;height:500px;display:none;/*隐藏*/}
+.custom_bottom ul{width:390px;float:left;margin:5px 0 50px 0;}
+.custom_bottom ul li{line-height:40px;font-size:14px;}
+
+
+
+
+
+
+/***-----侧边栏_右浮动-----***/
+.aside{
+	width:400px;float:right;/*右浮动*/
+	overflow:hidden;/*溢出隐藏*/
+	position:relative;/*相对定位*/
+}
+/**---公告---**/
+.board{margin:0;top:30px;}
+.board ul li{width:90px;}
+.board_top .boa{
+	border-bottom:4px solid rgb(5,173,141);/*鼠标移入_边框_底部*/
+	color:rgb(5,173,141);/*鼠标移入_字体颜色*/
+}
+.board_middle div{display:none;/*隐藏*/}
+.board_middle h3{
+	width:100%;line-height:40px;
+	color:rgb(5,173,141);
+	text-align:center;/*居中对齐*/
+}
+.board_middle ul{}
+.board_middle ul li{float:left;line-height:35px;width:100%;font-size:14px;}
+.board_middle ul li dd{/*新闻*/
+	width:50px; line-height:25px; float:left; top:5px;
+	display:block;/*块元素*/margin:0 5px 0;
+	border-radius:15px;
+	background:#ccc;
+	text-align:center;/*居中对齐*/
+	position:relative;/*相对定位*/
+}
+.board_middle ul li tt{float:right;}
+.board_bottom{/*留下你的意见，我们会做得更好！*/
+	width:100%; height:40px;float:left;margin:5px 0 0;
+	display:block;/*块元素*/
+	text-align:center;/*居中对齐*/
+	line-height:40px;
+	background:#eee;
+	position:relative;/*相对定位*/
+}
+.board_bottom:hover{background:#ccc;}
+
+
+/**英雄/皮肤**/
+.hero_middle li{width:133px;}
+.hero_middle .her{
+	border-bottom:4px solid rgb(5,173,141);/*鼠标移入_边框_底部*/
+	color:rgb(5,173,141);/*鼠标移入_字体颜色*/
+}
+#js_hero2 div{width:405px;height:170px;position:relative;float:left;margin:15px 0 35px;display:none;/*隐藏*/}
+#js_hero2 .hero_img{width:405px;position:relative;float:left;margin:15px 0 35px;}
+#js_hero2 .hero_img1 img{width:77px;display:block;float:left;margin:4px 4px 0 0;}
+.hero_img1 p{font-size:1px;float:right;margin:6px;}
+.hero_bottom{position:relative;float:left;width:100%;}
+.hero_top i{/*英雄/皮肤的图片*/
+	width:40px; height:40px; 
+	display:block;/*块元素*/ float:left;
+	background:url(../image/lol.png) no-repeat -160px -43px;/*图片*/
+}
+.hero_bottom h2{width:400px;}
+.hero_bottom tt{/*快速入口的图片*/
+	width:40px; height:40px; 
+	display:block;/*块元素*/ float:left;
+	background:url(../image/lol.png) no-repeat -200px -43px;/*图片*/
+}
+.hero_bottom div{width:100%;background:#ccc;}
+.hero_bottom div a{
+	width:94px;height:70px;margin:3px;float:left;
+	text-align:center;/*居中对齐*/
+	box-shadow:1px 1px 5px 1px rgba(0, 0, 0,0.1);/*外阴影*/
+}
+.hero_bottom div i{
+	width:40px; height:40px; margin:5px 26px 0;float:left;
+	
+}
+.hero_bottom div .i1{background:url(../image/lol.png) no-repeat -280px -40px;/*图片*/}
+.hero_bottom div .i2{background:url(../image/lol.png) no-repeat -320px -40px;/*图片*/}
+.hero_bottom div .i3{background:url(../image/lol.png) no-repeat -360px -40px;/*图片*/}
+.hero_bottom div .i4{background:url(../image/lol.png) no-repeat -680px -40px;/*图片*/}
+.hero_bottom div .i5{background:url(../image/lol.png) no-repeat -320px -40px;/*图片*/}
+.hero_bottom div .i6{background:url(../image/lol.png) no-repeat -400px -40px;/*图片*/}
+.hero_bottom div .i7{background:url(../image/lol.png) no-repeat -480px -40px;/*图片*/}
+.hero_bottom div .i8{background:url(../image/lol.png) no-repeat -520px -40px;/*图片*/}
+.hero_bottom  a:hover{color:rgb(5,173,141);}
+.hero_bottom  a:hover .i1{background:url(../image/lol.png) no-repeat -280px -80px;/*图片*/}
+.hero_bottom  a:hover .i2{background:url(../image/lol.png) no-repeat -320px -80px;/*图片*/}
+.hero_bottom  a:hover .i3{background:url(../image/lol.png) no-repeat -360px -80px;/*图片*/}
+.hero_bottom  a:hover .i4{background:url(../image/lol.png) no-repeat -680px -80px;/*图片*/}
+.hero_bottom  a:hover .i5{background:url(../image/lol.png) no-repeat -320px -80px;/*图片*/}
+.hero_bottom  a:hover .i6{background:url(../image/lol.png) no-repeat -400px -80px;/*图片*/}
+.hero_bottom  a:hover .i7{background:url(../image/lol.png) no-repeat -480px -80px;/*图片*/}
+.hero_bottom  a:hover .i8{background:url(../image/lol.png) no-repeat -520px -80px;/*图片*/}
+
+/***活动中心***/
+.activity{}
+.activity_bottom{}
+.activity_bottom div{}
+.activity_bottom lu{}
+.activity i{/*活动中心_图片*/
+	width:40px; height:36px; float:left;
+	background:url(../image/lol.png) no-repeat -240px -40px;/*图片*/
+	display:block;/*块元素*/ 
+}
+.activity_left{float:left;}
+.activity_left a{
+	display:block;/*块元素*/ 
+	width:145px; height:173px;margin:20px 2px 0px; position:relative;/*相对定位*/
+}
+.activity_right{
+	width:240px;height:173px;float:right;top:10px; position:relative;/*相对定位*/
+}
+.activity_right li{
+	margin:4px 0;line-height:22px;
+}
+.activity_right li a{margin:0 5px 0;display:block;/*块元素*/ width:235px;}
+.activity_right li tt{
+	width:50px; height:22px; line-height:22px;
+	float:right;border-radius:15px;background:rgb(5,173,141);
+	color:#fff; font-size:10px;
+	text-align:center;/*居中对齐*/
+}
+.activity_right li:hover{
+	border-radius:15px;background:rgb(5,173,141);color:#fff;
+}
+/*
+--------------------内容结束--------------------
+--------------------
+*/
+/******************************************************/
+/*
+--------------------底部--------------------
+*/
+
+.footer{
+	height:238px;width:100%;background:#eee;font-size:14px;
+	position:absolute;float:bottom;
+}
+.footer_center{margin:0 auto;width:1240px;height:100%;}
+
+.footer_left,.footer_cent{float:left;width:421px; height:67px;margin:30px 0 0;}
+.footer_left i{
+	width:67px; height:67px; float:left;
+	background:url(../image/footlogo.png) no-repeat -265px 0;/*图片*/
+}
+
+.footer_cent{float:left;}
+.footer_cent li{float:left;margin:0 7px 0 0;}
+
+.footer_right select {
+	float:right; margin:30px 50px 0 0;
+	width:284px; height:42px;
+}
+.footer_right select option{
+	top:-50px;position:absolute;
+	display:block;/*块元素*/ 
+}
+
+.footer_bottom{
+	width:1240px;height:101px;top:120px;position:absolute;
+	border-top:2px solid #ccc;
+}
+.footer_bottom a{
+	width:257px; height:50px; float:left; margin:20px 10px 0 0;
+	background:url(../image/footlogo.png) no-repeat;/*图片*/
+}
+.footer_bottom ul{
+	width:660px;height:76px;float:left; font-size:13px;margin:20px 20px 0 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
