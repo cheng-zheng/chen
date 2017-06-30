@@ -3,6 +3,7 @@ h2{font-weight:900;}
 h3{font-weight:800;margin-bottom:8%;}
 h2,h3,p{text-align:center;}
 p{margin-bottom:0;padding:2% 0;color:#444;}
+
 /*格栅*/
 .row{border:1px solid #ccc;border-top:none;padding:1% 0;}
 /*z主体*/
