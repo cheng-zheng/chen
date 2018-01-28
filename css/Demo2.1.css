@@ -1,0 +1,22 @@
+html,body{overflow-x:hidden;}
+h2{font-weight:900;}
+h3{font-weight:800;margin-bottom:8%;}
+h2,h3,p{text-align:center;}
+p{margin-bottom:0;padding:2% 0;color:#444;}
+/*格栅*/
+.row{border:1px solid #ccc;border-top:none;padding:1% 0;}
+/*z主体*/
+.centainer{max-width:920px;}
+.centainer .row .col-sm-4{margin-bottom:10%;}
+/*我的*/
+p.my{color:#666;font-size:.1em;}
+/*技能*/
+.progress{margin:5%;font-weight:800;}
+/*作品*/
+.col-sm-6{margin:6% 0;}
+#porject span{overflow:visible;width:40%;height:200%;overflow:hidden;}
+#porject .body{margin:5% 3%;}
+#porject .body tt{width:55%;float:right;color:#666;}
+/*联系*/
+form div input.form-control, form .btn-block{width:90%;min-height:50px;}
+.col-sm-12 img{width:5%;}
