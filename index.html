@@ -191,36 +191,7 @@
 <!--script src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script-->
 
-<script type="text/javascript">
-
-//窗口或框架被重新调整大小
-onresize = Resize;
-function Resize(){
-	/*作品高度图片高度跟 宽一致*/
-	var aSpan = List(Id('porject'),'span');//获取 span
-	var width = aSpan[0].offsetWidth;//获取宽
-	for(var i=0; i<aSpan.length; i++){
-		aSpan[i].style.height = width+'px';//给高赋值
-	}
-}Resize();
-//是否要跳转页面
-function onConfirm(){
-	if(confirm("您确定要跳转吗？")){
-		return true;
-	}
-	return false;
-}
-
-function Id(obj){
-	return document.getElementById(obj);
-}
-function List(obj,arr){
-	return obj.getElementsByTagName(arr);
-}
-function cName(obj,arr){
-	return obj.getElementsByClassName(arr);
-}
-</script>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
