@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>俄罗斯方块</title>
+<style>
+.body{
+	position:relative;float:left;
+	overflow:hidden;	
+	width:300px; height:600px;
+	border:1px solid red;
+	background:#eee;
+	margin-left:60px;
+}
+.block_I,.block_Z,.block_S,.block_T,.block_L,.block_J,.block_O{
+	position:absolute; background:green;
+	width:28px;height:28px;border:1px solid #ccc;
+}
+.block_I{background:#66CCFF;}
+.block_Z{background:yellow;}
+.block_S{background:green;}
+.block_T{background:#0000FF;}
+.block_L{background:#FF7F00;}
+.block_J{background:#00FFFF;}
+.block_O{background:#FFFF00;}
+.block_{
+	position:absolute; background:#ccc;
+	width:28px;height:28px;border:1px solid #aaa;
+}
+/*右边框*/
+.body_rigth{
+	position:relative;width:200px; height:600px;float:left;
+	border:1px solid green;
+}
+.body_rigth span{
+	display:block;
+	width:200px;height:200px;
+}
+.body_rigth div{float:left;}
+#Fraction{color:red;}
+</style>
+</head>
+
+
+
+
+
+	
+<body>
+
+	<div id="js_body" class="body">
+		
+	<!-- 底部 -->
+		<div class="block_"style="left:0px;   top:600px;"></div>
+		<div class="block_"style="left:30px;  top:600px;"></div>
+		<div class="block_"style="left:60px;  top:600px;"></div>
+		<div class="block_"style="left:90px;  top:600px;"></div>
+		<div class="block_"style="left:120px; top:600px;"></div>
+		<div class="block_"style="left:150px; top:600px;"></div>
+		<div class="block_"style="left:180px; top:600px;"></div>
+		<div class="block_"style="left:210px; top:600px;"></div>
+		<div class="block_"style="left:240px; top:600px;"></div>
+		<div class="block_"style="left:270px; top:600px;"></div>
+		
+		<!--div class="block_"style="left:0px;   top:570px;"></div>
+		<div class="block_"style="left:30px;  top:570px;"></div>
+		<div class="block_"style="left:60px;  top:570px;"></div>
+		<div class="block_"style="left:90px;  top:570px;"></div>
+		<div class="block_"style="left:120px; top:570px;"></div>
+		<div class="block_"style="left:150px; top:570px;"></div>
+		<div class="block_"style="left:180px; top:570px;"></div>
+		<div class="block_"style="left:210px; top:570px;"></div>
+		<div class="block_"style="left:240px; top:570px;"></div-->
+		
+		<!--div class="block_"style="left:0px; top:540px;"></div>
+		<div class="block_"style="left:30px; top:510px;"></div>
+		<div class="block_"style="left:30px; top:540px;"></div>
+		<div class="block_"style="left:30px; top:510px;"></div>
+		<div class="block_"style="left:30px; top:480px;"></div>
+		<div class="block_"style="left:30px; top:450px;"></div>
+		<div class="block_"style="left:30px; top:420px;"></div>
+		<div class="block_"style="left:30px; top:390px;"></div>
+		<div class="block_"style="left:30px; top:360px;"></div>
+		<div class="block_"style="left:60px; top:360px;"></div>
+		<div class="block_"style="left:90px; top:360px;"></div>
+		<div class="block_"style="left:120px; top:360px;"></div-->
+		
+		
+	</div>
+	<div id="js_body_rigth" class="body_rigth">
+		<span ></span>
+		<div>得分：</div><div id="Fraction" >0</div>
+	</div>
+
+<script src="Tetris.js">
+
+</script>	
+
+</body>
+</html>
