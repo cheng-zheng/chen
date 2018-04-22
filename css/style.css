@@ -19,15 +19,18 @@ p.my{color:#666;font-size:12px;padding-left: 4%;padding-right: 4%;}
 /*技能*/
 .skill{}
 .page-title small{font-size:1px;color:#ccc;}
-.progress{margin:4% 5%;font-weight:800;}
-.progress.js>div{width:75%;background:#FC0;}
+.progress{margin:3% 5%;font-weight:800;}
+.progress.js>div{width:76%;background:#FC0;}
+.progress.laravel>div{width:73%;background:#f4645f;}
+.progress.thinphp5>div{width:67%;background:rgb(111,183,55);}
+.progress.vue>div{width:65%;background:#4fc08d;}
+
 .progress.php>div{width:55%;}
-.progress.laravel>div{width:50%;background:#f4645f;}
-.progress.jquery>div{width:48%;background:blue;}
-.progress.bootstrap>div{width:45%;background:#306;}
-.progress.html5>div{width:40%;}
-.progress.css3>div{width:35%;}
-.progress.vue>div{width:30%;background:#4fc08d;}
+.progress.bootstrap>div{width:49%;background:#306;}
+.progress.jquery>div{width:46%;background:blue;}
+.progress.html5>div{width:42%;}
+.progress.css3>div{width:38%;}
+
 /*作品*/
 .col-sm-6{margin:6% 0;}
 #porject span{overflow:visible;width:40%;height:200%;overflow:hidden;}
