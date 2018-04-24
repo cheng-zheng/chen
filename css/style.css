@@ -1,5 +1,5 @@
 
-html,body{overflow-x:hidden;}
+html,body{overflow-x:hidden;background: #f1f1f1;}
 h2{font-weight:900;}
 h3{font-weight:800;margin-bottom:8%;}
 ﻿html,body{overflow-x:hidden;}
@@ -8,9 +8,9 @@ h3{font-weight:800;margin-bottom:20px;}
 h2,h3,p{text-align:center;}
 p{margin-bottom:0;padding:2% 0;color:#444;}
 /*格栅*/
-.row{border:1px solid #ccc;border-top:none;padding:1% 0;}
+.row{border-top:none;padding:1% 0;}
 /*z主体*/
-.centainer{max-width:920px;}
+.centainer{max-width:920px;background: #fff;}
 .centainer .row .col-sm-4{margin-bottom:10%;}
 /*我的*/
 p.my{color:#666;font-size:12px;padding-left: 4%;padding-right: 4%;}
@@ -38,5 +38,7 @@ p.my{color:#666;font-size:12px;padding-left: 4%;padding-right: 4%;}
 #porject .body tt{width:55%;float:right;color:#666;}
 #porject span.center-block img{width: 100%;}
 /*联系*/
+.contact p{padding:8px 0;}
+.contact .iconfont{margin-left: 8px}
 form div input.form-control, form .btn-block{width:90%;min-height:50px;}
 .col-sm-12 img{width:5%;}
