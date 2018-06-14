@@ -25,11 +25,11 @@ p.self-introduction{color:#666;font-size:12px;padding-left: 4%;padding-right: 4%
 .progress.thinphp5>div{width:67%;background:rgb(111,183,55);}
 .progress.vue>div{width:65%;background:#4fc08d;}
 
-.progress.php>div{width:55%;}
-.progress.bootstrap>div{width:49%;background:#306;}
-.progress.jquery>div{width:46%;background:blue;}
-.progress.html5>div{width:42%;}
-.progress.css3>div{width:38%;}
+.progress.php>div{width:57%;}
+.progress.lnmp>div{width:46%;}
+.progress.jquery>div{width:43%;background:blue;}
+.progress.bootstrap>div{width:38%;background:#306;}
+.progress.css3>div{width:35%;}
 
 /*作品*/
 .col-sm-6{margin:6% 0;}
